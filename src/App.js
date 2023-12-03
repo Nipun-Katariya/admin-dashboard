@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import UsersTable from './components/table/UsersTable';
+import SearchBox from './components/search/SearchBox';
+import { useState } from 'react';
+import { useEffect } from 'react';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const [users, setUsers] = useState([]);
+
+  useEffect(() => {
+    fetch("https://geektrust.s3-ap-southeast-1.amazonaws.com/adminui-problem/members.json", {
+      method: "GET"
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        setUsers(data);
+        console.log(data);
+      })
+      .catch((error) => console.log(error));
+  }, []);
+  
+    return (
+      <div>
+        <SearchBox></SearchBox>
+        <UsersTable users = {users}/>
+        Icons by <a target="_blank" href="https://icons8.com">Icons8</a>
+      </div>
+    );
 }
 
 export default App;
