@@ -23,11 +23,6 @@
     background-color: rgb(240, 232, 232);
 }
 
-img {
-    max-width: 100px; 
-    max-height: 100px;
-  }
-
   .edit {
     width: 20px;
     height: auto;
@@ -52,3 +47,7 @@ img {
 img:hover {
     box-shadow: 2px;
   }
+
+.actions {
+    margin: 10px;
+}

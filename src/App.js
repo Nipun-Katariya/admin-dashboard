@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react';
 import UsersTable from './components/table/UsersTable';
 import { useState } from 'react';
 import { useEffect } from 'react';
@@ -21,6 +22,7 @@ function App() {
       <div>
         <UsersTable users = {users}/>
         Icons by <a target="_blank" href="https://icons8.com">Icons8</a>
+        <Analytics />
       </div>
     );
 }
