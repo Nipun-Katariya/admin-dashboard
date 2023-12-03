@@ -5,17 +5,15 @@ import { DeleteIcon } from '../../assets/Icons';
 
 const UsersTable = ({ users }) => {
   return (
+    <div>
+      <div className="container1">
+            <input className='search' type='text' placeholder="Search" />
+            <img src = {DeleteIcon} className="master-delete"/>
     
-    <div className='users-table'>
-      <div>
-            <div className="search">
-            <input  placeholder="Search"></input>
-            </div>
-            <div className="master-delete">
-            <img src = {DeleteIcon} />
-            </div>
         </div>
-      <table>
+
+      <div className='table-container'>
+      <table className='users-table'>
         <thead>
           <tr>
             <th>
@@ -29,7 +27,7 @@ const UsersTable = ({ users }) => {
         </thead>
         <tbody>
           {users.map((user, id) => (
-            <tr key={user.id}>
+            <tr key={user.id} className='table-row'>
               <td>
               <input type="checkbox"/>
             </td>
@@ -45,6 +43,8 @@ const UsersTable = ({ users }) => {
         </tbody>
       </table>
     </div>
+    </div>
+    
   );
 };
 

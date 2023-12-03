@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto+Mono&display=swap');
-
-.users-table {
-    table-layout: auto;
+* {
     font-family: 'Poppins', sans-serif;
     font-family: 'Roboto Mono', monospace;
     font-size: 12px;
+}
+
+.users-table {
     padding-left: 20px;
-    
 }
 
 .users-table th, 
@@ -17,10 +17,16 @@
     padding-top: 5px;
     padding-bottom: 5px;
     text-align: left;
+    justify-content: space-between;
+}
+
+.table-row {
+    border: 2px lightgray solid;
 }
 
 .users-table th {
     background-color: rgb(240, 232, 232);
+    border-radius: 5px;
 }
 
   .edit {
@@ -40,14 +46,39 @@
     box-shadow: 10px;
   }
 
+.container1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
   .search {
-    padding-left: 20px;
-}
+    padding: 5px;
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px lightgray solid;
+    border-radius: 5px;
+  }
+  
+  .master-delete {
+    width: 20px;
+    height: auto;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 10px;
+    margin-right: 20px;
 
-img:hover {
-    box-shadow: 2px;
+  }
+  
+  .table-container {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
-.actions {
-    margin: 10px;
-}
+  .users-table {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    border-collapse: collapse;
+  }
