@@ -1,5 +1,4 @@
 import UsersTable from './components/table/UsersTable';
-import SearchBox from './components/search/SearchBox';
 import { useState } from 'react';
 import { useEffect } from 'react';
 
@@ -20,7 +19,6 @@ function App() {
   
     return (
       <div>
-        <SearchBox></SearchBox>
         <UsersTable users = {users}/>
         Icons by <a target="_blank" href="https://icons8.com">Icons8</a>
       </div>

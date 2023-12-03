@@ -5,7 +5,16 @@ import { DeleteIcon } from '../../assets/Icons';
 
 const UsersTable = ({ users }) => {
   return (
+    
     <div className='users-table'>
+      <div>
+            <div className="search">
+            <input  placeholder="Search"></input>
+            </div>
+            <div className="master-delete">
+            <img src = {DeleteIcon} />
+            </div>
+        </div>
       <table>
         <thead>
           <tr>
@@ -27,9 +36,9 @@ const UsersTable = ({ users }) => {
               <td>{user.name}</td>
               <td>{user.email}</td>
               <td>{user.role}</td>
-              <td className='actions'>
-                <img src = {EditIcon} />
-                <img src = {DeleteIcon} />
+              <td>
+                <img src = {EditIcon} className='edit'/>
+                <img src = {DeleteIcon} className='delete'/>
               </td>
             </tr>
           ))}

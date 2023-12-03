@@ -1,12 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto+Mono&display=swap');
+
 .users-table {
     table-layout: auto;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 12px;
+    padding-left: 20px;
+    
 }
 
 .users-table th, 
 .users-table td {
     width: auto;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
     padding-top: 5px;
     padding-bottom: 5px;
     text-align: left;
@@ -16,8 +23,32 @@
     background-color: rgb(240, 232, 232);
 }
 
-.actions {
-    padding: 2px;
-    width: 10px;
-    height: 10px;
+img {
+    max-width: 100px; 
+    max-height: 100px;
+  }
+
+  .edit {
+    width: 20px;
+    height: auto;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+  
+  .delete {
+    width: 20px;
+    height: auto;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 10px;
+  }
+
+  .search {
+    padding-left: 20px;
 }
+
+img:hover {
+    box-shadow: 2px;
+  }
