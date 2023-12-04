@@ -5,11 +5,52 @@
     font-size: 12px;
 }
 
-.users-table {
-    padding-left: 20px;
+.container {
+    position: relative;
 }
 
-.users-table th, 
+.search-container {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+  
+.search {
+    width: 200px;
+    padding: 5px;
+    margin-left: 40px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+  
+.master-delete {
+    width: 25px;
+    height: auto;
+    margin-right: 40px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+
+}
+
+.table-container {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.users-table {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.table-header {
+    width: auto;
+    padding-left: 20px;
+    border: 2px solid black;
+}
+
 .users-table td {
     width: auto;
     padding-left: 50px;
@@ -24,61 +65,22 @@
     border: 2px lightgray solid;
 }
 
-.users-table th {
-    background-color: rgb(240, 232, 232);
+.edit {
+    width: 20px;
+    height: auto;
+    padding: 5px;
+    border: 1px solid black;
     border-radius: 5px;
 }
-
-  .edit {
-    width: 20px;
-    height: auto;
-    padding: 5px;
-    border: 1px solid black;
-    border-radius: 5px;
-  }
   
-  .delete {
+.delete {
     width: 20px;
     height: auto;
     padding: 5px;
     border: 1px solid black;
     border-radius: 5px;
     box-shadow: 10px;
-  }
+}
 
-.container1 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .search {
-    padding: 5px;
-    width: 200px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border: 1px lightgray solid;
-    border-radius: 5px;
-  }
-  
-  .master-delete {
-    width: 20px;
-    height: auto;
-    padding: 5px;
-    border: 1px solid black;
-    border-radius: 5px;
-    box-shadow: 10px;
-    margin-right: 20px;
 
-  }
   
-  .table-container {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-
-  .users-table {
-    width: calc(100% - 40px);
-    margin: 0 auto;
-    border-collapse: collapse;
-  }

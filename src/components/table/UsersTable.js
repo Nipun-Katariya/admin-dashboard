@@ -5,16 +5,15 @@ import { DeleteIcon } from '../../assets/Icons';
 
 const UsersTable = ({ users }) => {
   return (
-    <div>
-      <div className="container1">
+    <div className='container'>
+      <div className="search-container">
             <input className='search' type='text' placeholder="Search" />
             <img src = {DeleteIcon} className="master-delete"/>
-    
-        </div>
+          </div>
 
       <div className='table-container'>
       <table className='users-table'>
-        <thead>
+        <thead className='table-header'>
           <tr>
             <th>
             <input type="checkbox" />
